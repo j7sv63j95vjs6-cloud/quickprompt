@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>QuickPrompt — Free Online Teleprompter (No Sign-Up, Private)</title>
-<meta name="description" content=「ブラウザで100%動作する無料のオンラインテレプロンプター。 スクリプトを貼り付け、速度とフォントサイズを設定し、ミラーモードを使用します。 電話、タブレット、デスクトップで動作します。 あなたのテキストはあなたのデバイスから離れません。 スクリプトを貼り付け、速度とフォントサイズを設定し、ミラーモードを使用します。 電話、タブレット、デスクトップで動作します。 あなたのテキストはあなたのデバイスから離れません。 />
+<meta name="description" content="Free online teleprompter that runs 100% in your browser. Paste your script, set speed and font size, use mirror mode. Works on phone, tablet and desktop. Your text never leaves your device." />
 <meta property="og:title" content="QuickPrompt — Free Online Teleprompter" />
-<meta property="og:description" content="スクリプトを貼り付けてプロンプトを起動します。" 100%ブラウザ内、プライベート、サインアップなし。 100%ブラウザ内、プライベート、サインアップなし。 />
+<meta property="og:description" content="Paste your script and start prompting. 100% in-browser, private, no sign-up." />
 <meta property="og:type" content="website" />
 <!-- TODO: after connecting your own domain, uncomment and set it:
 <link rel="canonical" href="https://YOUR-DOMAIN.example/" /> -->
@@ -20,94 +20,94 @@
 {"@type":"Question","name":"Does it work on iPad and iPhone?","acceptedAnswer":{"@type":"Answer","text":"Yes. QuickPrompt works in Safari and Chrome on iPad, iPhone and Android. On supported devices the screen stays awake while prompting."}},
 {"@type":"Question","name":"Can I control it with a keyboard or presenter remote?","acceptedAnswer":{"@type":"Answer","text":"Yes. Space plays and pauses, arrow keys change speed and position, and most Bluetooth presenter remotes work because they send Page Up and Page Down."}}
 ]}
-</スクリプト>
-<ノスクリプト><p クラス="ノスクリプト">QuickPromptはスクリプトをスクロールするためにJavaScriptが必要です。 JavaScriptを有効にしてください。</p></noscript>
-</
+</script>
+</head>
+<body>
 
->
-  <ディヴ クラス="ブランド"><スパン クラス="ブランドマーク">▶</span> クイックプロンプト</div>
-  <ボタン id="startBtn" クラス="btn btn-プライマリー" disabled>プロンプト開始</button>
-ヘッダー
+<header class="app-header">
+  <div class="brand"><span class="brand-mark">▶</span> QuickPrompt</div>
+  <button id="startBtn" class="btn btn-primary" disabled>Start prompting</button>
+</header>
 
->
-  <h1 クラス="タグライン">無料のオンラインテレプロンプター-サインアップなし、スクリプトはこのデバイスを離れることはありません</h1>
-  <ラベル クラス="srのみ" のために="スクリプト">あなたの台本</label>
-  <テキスト領域 id="スクリプト" スペルチェック="虚偽" placeholder="Paste or type your script here…"></textarea>
-  <p クラス="ヒント">ヒント: <kbd>Ctrl</kbd>+<kbd>エンター</kbd> 始めるのです プロンプト表示中:tap=pause/resume・ <kbd>宇宙</kbd> 遊び/一時停止・ <kbd>↑</kbd><kbd>↓</kbd> ・速度 <kbd>+</kbd><kbd>−</kbd> フォントサイズ・ <kbd>M</kbd> ミラー・ <kbd>G</kbd> ガイド・ <kbd>F</kbd> フルスクリーン・ <kbd>R</kbd> 再起動・ <kbd>エスク</kbd> 出口</p>
+<main class="editor">
+  <h1 class="tagline">Free online teleprompter — no sign-up, your script never leaves this device</h1>
+  <label class="sr-only" for="script">Your script</label>
+  <textarea id="script" spellcheck="false" placeholder="Paste or type your script here…"></textarea>
+  <p class="hint">Tip: <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to start. While prompting: tap = pause/resume · <kbd>Space</kbd> play/pause · <kbd>↑</kbd><kbd>↓</kbd> speed · <kbd>+</kbd><kbd>−</kbd> font size · <kbd>M</kbd> mirror · <kbd>G</kbd> guide · <kbd>F</kbd> fullscreen · <kbd>R</kbd> restart · <kbd>Esc</kbd> exit</p>
 
-  <セクション クラス="内容">
-    <h2>仕組み</h2>
-    <オル>
-      <リー>上のボックスにスクリプトを貼り付けます。</li>
-      <リー>プレス <強い>プロンプト開始</strong>.短いカウントダウン後、テキストは自動的にスクロールします。</li>
-      <リー>画面をタップして一時停止または再開します。 読みながら、下のバーから速度とフォントサイズを調整します。</li>
-    </オル>
+  <section class="content">
+    <h2>How it works</h2>
+    <ol>
+      <li>Paste your script into the box above.</li>
+      <li>Press <strong>Start prompting</strong>. After a short countdown, the text scrolls automatically.</li>
+      <li>Tap the screen to pause or resume. Adjust speed and font size from the bottom bar while you read.</li>
+    </ol>
 
-    <h2>特徴</h2>
+    <h2>Features</h2>
     <ul>
-      <リー><強い>設計上プライベート</強い> -すべてがブラウザで実行されます。 スクリプトはこのデバイスにのみ保存されます。</li>
-      <リー><強い>ミラーモード</強い> ビームスプリッターテレプロンプターリグ用です</li>
-      <リー><強い>スムーズスクロール</強い> ライブスピードとフォントサイズのコントロール、リーディングガイド、プログレスバーを備えています。</li>
-      <リー><強い>どこでも作品</強い> -電話、タブレット(iPadで素晴らしい)、デスクトップ。 プロンプト表示中は画面をスリープ状態に保ちます。</li>
-      <リー><強い>無料、口座なし</強い> -アップロードも透かしも時間制限もない</li>
+      <li><strong>Private by design</strong> — everything runs in your browser. The script is saved only on this device.</li>
+      <li><strong>Mirror mode</strong> for beam-splitter teleprompter rigs.</li>
+      <li><strong>Smooth scrolling</strong> with live speed and font-size control, a reading guide and a progress bar.</li>
+      <li><strong>Works everywhere</strong> — phone, tablet (great on iPad) and desktop. Keeps the screen awake while prompting.</li>
+      <li><strong>Free, no account</strong> — no upload, no watermark, no time limit.</li>
     </ul>
 
-    <h2>ファック</h2>
-    <詳細>
-      <要約>私のスクリプトはどこかにアップロードされていますか?</summary>
-      <p>いいえ。QuickPromptはテキストでネットワークリクエストを行いません。 スクリプトは、このデバイスのブラウザのローカルストレージにのみ保存されます。 ブラウザデータをクリアすると削除されるため、元のコピーは別の場所に保管してください。</p>
-    </詳細>
-    <詳細>
-      <要約>ミラーモードとは何ですか?</要約>
-      <p>テキストを水平に反転させる(⇋ボタン、または押す)。 <kbd>M</kbd>)なので、物理的なテレプロンプターリグのビームスプリッターガラスを通して正しく読み取ります。</p>
-    </詳細>
-    <詳細>
-      <要約>iPadとiPhoneで動作しますか?</summary>
-      <p>はい-iPad、iPhone、AndroidでSafariとChromeで実行されます。 サポートされているデバイスでは、プロンプト表示中は画面が自動的に停止します。</p>
-    </詳細>
-    <詳細>
-      <要約>キーボードやプレゼンターのリモコンを使ってもいいですか?</summary>
-      <p>はい。 <kbd>宇宙</kbd> 再生/一時停止と矢印キーが速度と位置を調整します。 ほとんどのBluetoothプレゼンターリモコンは、スクリプトを前後にジャンプするページアップ/ページダウンを送信します。</p>
-    </詳細>
-  </セクション>
-メイン
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is my script uploaded anywhere?</summary>
+      <p>No. QuickPrompt makes no network requests with your text. The script lives in your browser's local storage on this device only. Note that clearing your browser data will delete it, so keep your original copy elsewhere.</p>
+    </details>
+    <details>
+      <summary>What is mirror mode?</summary>
+      <p>It flips the text horizontally (⇋ button, or press <kbd>M</kbd>) so it reads correctly through the beam-splitter glass of a physical teleprompter rig.</p>
+    </details>
+    <details>
+      <summary>Does it work on iPad and iPhone?</summary>
+      <p>Yes — it runs in Safari and Chrome on iPad, iPhone and Android. On supported devices the screen stays awake automatically while prompting.</p>
+    </details>
+    <details>
+      <summary>Can I use a keyboard or presenter remote?</summary>
+      <p>Yes. <kbd>Space</kbd> plays/pauses and the arrow keys adjust speed and position. Most Bluetooth presenter remotes send Page Up / Page Down, which jump the script backward and forward.</p>
+    </details>
+  </section>
+</main>
 
->
+<footer class="site-footer"><p>© 2026 QuickPrompt · Runs entirely in your browser · Your script is never uploaded</p></footer>
 
-<!--=>=プロンプターオーバーレイ=-=-->
-<
-  <ディヴ id="進歩" クラス="進歩"></ディヴ>
-  <ディヴ id="ガイド" クラス="ガイド" アリアヒドゥン="true">▶</div>
-  <ディヴ id="ビューポート" クラス="ビューポート">
-    <ディヴ id="ムーバー" クラス="ムーバー">
-      <ディヴ id="テキストラップ" クラス="テキストラップ">
-        <ディヴ id="テキスト" クラス="テキスト"></div>
-      </ディヴ>
-    </ディヴ></ディヴ> 
-  </ディヴ></ディヴ> 
-  <ディヴ id="カウントダウン" クラス="カウントダウン" 隠し>3</div><ディヴ id="カウントダウン" クラス="カウントダウン" 隠し>3</div>
-  <ディヴ id="エンドキャップ" クラス="エンドキャップ" 隠し>- 台本の終わり -</div><ディヴ id="エンドキャップ" クラス="エンドキャップ" 隠し>- 台本の終わり -</div> 
-  <ディヴ id="プレイバー" クラス="プレイバー"><ディヴ id="プレイバー" クラス="プレイバー"> 
-    <ボタン id="exitBtn" クラス="btn bar-btn" アリアラベル="Back to editor">✕</button><ボタン id="exitBtn" クラス="btn bar-btn" アリアラベル="Back to editor">✕</button>
-    <ボタン id="restartBtn" クラス="btn bar-btn" アリアラベル="Restart from top">⟲</button><ボタン id="restartBtn" クラス="btn bar-btn" アリアラベル="Restart from top">⟲</button>
-    <ボタン id="playBtn" クラス="btn bar-btn play" aria-label="Play">▶</button><ボタン id="playBtn" クラス="btn bar-btn play" aria-label="Play">▶</button>
-    <スパン クラス="グループ" 役割="グループ" アリアラベル="Speed"><スパン クラス="グループ" 役割="グループ" アリアラベル="Speed"> 
-      <ボタン id="スピードダウン" クラス="btn bar-btn" aria-label="Slower">−</button><ボタン id="スピードダウン" クラス="btn bar-btn" aria-label="Slower">−</button>
-      <出力 id="スピードヴァル" クラス="ヴァル">3.0</出力><出力 id="スピードヴァル" クラス="ヴァル">3.0</出力>
-      <ボタン id="スピードアップ" クラス="btn bar-btn" アリアラベル="Faster">+</button><ボタン id="スピードアップ" クラス="btn bar-btn" アリアラベル="Faster">+</button>
-     </スパン> 
-    <スパン クラス="グループ" 役割="グループ" アリアラベル="Font size"><スパン クラス="グループ" 役割="グループ" アリアラベル="Font size"> 
-      <ボタン id="fontDown" クラス="btn bar-btn" アリアラベル="Smaller text">A−</button><ボタン id="fontDown" クラス="btn bar-btn" アリアラベル="Smaller text">A−</button>
-      <ボタン id="fontUp" クラス="btn bar-btn" アリアラベル="Larger text">A+</button><ボタン id="fontUp" クラス="btn bar-btn" アリアラベル="Larger text">A+</button>
-     </スパン> 
-    <ボタン id="mirrorBtn" クラス="btn bar-btn" アリアプレス="false" aria-label="Mirror mode">⇋</button><ボタン id="mirrorBtn" クラス="btn bar-btn" アリアプレス="false" aria-label="Mirror mode">⇋</button>
-    <ボタン id="guideBtn" クラス="btn bar-btn" アリアプレス="true" aria-label="Reading guide">▸</button><ボタン id="guideBtn" クラス="btn bar-btn" アリアプレス="true" aria-label="Reading guide">▸</button>
-    <ボタン id="fsBtn" クラス="btn bar-btn" アリアラベル="Fullscreen">⛶</button><ボタン id="fsBtn" クラス="btn bar-btn" アリアラベル="Fullscreen">⛶</button>
-    <出力 id="タイムレフト" クラス="バルタイム">0:00</output><出力 id="タイムレフト" クラス="バルタイム">0:00</output>
- </div> </div> </div> 
+<!-- ===== Prompter overlay ===== -->
+<div id="prompter" hidden>
+  <div id="progress" class="progress"></div>
+  <div id="guide" class="guide" aria-hidden="true">▶</div>
+  <div id="viewport" class="viewport">
+    <div id="mover" class="mover">
+      <div id="textwrap" class="textwrap">
+        <div id="ptext" class="ptext"></div>
+      </div>
+    </div>
+  </div>
+  <div id="countdown" class="countdown" hidden>3</div>
+  <div id="endcap" class="endcap" hidden>— End of script —</div>
+  <div id="playbar" class="playbar">
+    <button id="exitBtn" class="btn bar-btn" aria-label="Back to editor">✕</button>
+    <button id="restartBtn" class="btn bar-btn" aria-label="Restart from top">⟲</button>
+    <button id="playBtn" class="btn bar-btn play" aria-label="Play">▶</button>
+    <span class="group" role="group" aria-label="Speed">
+      <button id="speedDown" class="btn bar-btn" aria-label="Slower">−</button>
+      <output id="speedVal" class="val">3.0</output>
+      <button id="speedUp" class="btn bar-btn" aria-label="Faster">+</button>
+    </span>
+    <span class="group" role="group" aria-label="Font size">
+      <button id="fontDown" class="btn bar-btn" aria-label="Smaller text">A−</button>
+      <button id="fontUp" class="btn bar-btn" aria-label="Larger text">A+</button>
+    </span>
+    <button id="mirrorBtn" class="btn bar-btn" aria-pressed="false" aria-label="Mirror mode">⇋</button>
+    <button id="guideBtn" class="btn bar-btn" aria-pressed="true" aria-label="Reading guide">▸</button>
+    <button id="fsBtn" class="btn bar-btn" aria-label="Fullscreen">⛶</button>
+    <output id="timeLeft" class="val time">0:00</output>
+  </div>
 </div>
 
-<
-<!--Cloudflare Web Analytics:Cloudflareダッシュボードでビーコンのスニペットを有効にした後、ここに貼り付けます-->
-</body>body>
-    </html>
+<noscript><p class="noscript">QuickPrompt needs JavaScript to scroll your script. Please enable JavaScript.</p></noscript>
+<!-- Cloudflare Web Analytics: paste the beacon snippet here after enabling it in the Cloudflare dashboard -->
+</body>
+</html>

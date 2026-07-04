@@ -219,7 +219,7 @@
   el.script.addEventListener('input', () => {
     settings.script = el.script.value; updateStart(); save();
   });
-                       el.script.addEventListener('keydown', (e) => {                     
+  el.script.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter' && !el.startBtn.disabled) openPrompter();
   });
   el.startBtn.addEventListener('click', openPrompter);
@@ -245,56 +245,56 @@
       if (document.fullscreenElement || document.webkitFullscreenElement) {
         (document.exitFullscreen || document.webkitExitFullscreen).call(document);
       } else {
- const r=el.prompter.requestFullscreen|| el.prompter.webkitRequestFullscreen; 
- const p=r.call(el.prompter); 
- (p&&p.catch)p.catch(()=>{})の場合 
-  }  
-          }キャッチ(_) {}          
-  }); 
+        const r = el.prompter.requestFullscreen || el.prompter.webkitRequestFullscreen;
+        const p = r.call(el.prompter);
+        if (p && p.catch) p.catch(() => {});
+      }
+    } catch (_) {}
+  });
 
- document.addEventListener(「keydown」、(e)=>{ 
-          (el.prompter.hidden|| e.target === el.script)が戻ると;          
- const k=e.key; 
-          もし(k===''){          
- e.preventDefault(); 
-          (カウントダウンアクティブ() {ストップカウントダウン();プレイ();}その他トグル();          
- }そうでなければ、(k==='ArrowUp'){e.preventDefault();setSpeed(settings.speed+0.1);showBar();} 
- それ以外の場合(k==='ArrowDown'){e.preventDefault();setSpeed(settings.speed-0.1);showBar();} 
- それ以外の場合(k==='ArrowRight'){e.preventDefault();setPos(pos+120);dateTime();} 
- それ以外の場合(k==='ArrowLeft'){e.preventDefault();setPos(pos-120);dateTime();} 
- それ以外の場合(k==='PageDown'){e.preventDefault();setPos(pos+300);dateTime();} 
- それ以外の場合(k==='PageUp'){e.preventDefault();setPos(pos-300);dateTime();} 
-          それ以外の場合(k==='+'||k==='='){setFont(settings.fontSize+4);}          
-          それ以外の場合(k==='-'||k==='_'){setFont(settings.fontSize-4);}          
-             それ以外の場合(k==='m'||k==='M'){toggleMirror();showBar();}             
-            それ以外の場合(k==='g'||k==='G'){toggleGuide();showBar();}            
-            それ以外の場合(k==='f'||k==='F'){if(!el.fsBtn.hidden)el.fsBtn.click();}            
-              それ以外の場合(k==='r'||k==='R'||k=「ホーム」){再起動();}              
- 他にif(k==='Escape'){if(!document.fullscreenElement)closePrompter();} 
-  }); 
+  document.addEventListener('keydown', (e) => {
+    if (el.prompter.hidden || e.target === el.script) return;
+    const k = e.key;
+    if (k === ' ') {
+      e.preventDefault();
+      if (countdownActive()) { stopCountdown(); play(); } else toggle();
+    } else if (k === 'ArrowUp') { e.preventDefault(); setSpeed(settings.speed + 0.1); showBar(); }
+    else if (k === 'ArrowDown') { e.preventDefault(); setSpeed(settings.speed - 0.1); showBar(); }
+    else if (k === 'ArrowRight') { e.preventDefault(); setPos(pos + 120); updateTime(); }
+    else if (k === 'ArrowLeft') { e.preventDefault(); setPos(pos - 120); updateTime(); }
+    else if (k === 'PageDown') { e.preventDefault(); setPos(pos + 300); updateTime(); }
+    else if (k === 'PageUp') { e.preventDefault(); setPos(pos - 300); updateTime(); }
+    else if (k === '+' || k === '=') { setFont(settings.fontSize + 4); }
+    else if (k === '-' || k === '_') { setFont(settings.fontSize - 4); }
+    else if (k === 'm' || k === 'M') { toggleMirror(); showBar(); }
+    else if (k === 'g' || k === 'G') { toggleGuide(); showBar(); }
+    else if (k === 'f' || k === 'F') { if (!el.fsBtn.hidden) el.fsBtn.click(); }
+    else if (k === 'r' || k === 'R' || k === 'Home') { restart(); }
+    else if (k === 'Escape') { if (!document.fullscreenElement) closePrompter(); }
+  });
 
- document.addEventListener(「可視化」)、(=>{  (「可視化」、 () =>{ 
- もし(document.visibilityState==='visible'){ 
-                      lastT=パフォーマンス。今();                      
-                      (!el.prompter.hidden)リクエストWake();                      
- }他{ 
-                       もし(カウントダウンアクティブ() { stopCountdown(); showBar(true);}                       
-                       (演奏)一時停止()の場合                       
-  } 
-  }); 
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      lastT = performance.now();
+      if (!el.prompter.hidden) requestWake();
+    } else {
+      if (countdownActive()) { stopCountdown(); showBar(true); }
+      if (playing) pause();
+    }
+  });
 
-                       rzTimer=0とする。                       
- window.addEventListener{(適用ガイド) 
-                        el.prompter.hidden 返却する場合                        
- clearTimeout(rzTimer); 
- rzTimer=setTimeout(()=>{ 
- const r=maxPos()?pos/maxPos():0; 
- 測定();setPos(r * maxPos();更新時間(); 
-  }, 150);  
-  });  
+  let rzTimer = 0;
+  window.addEventListener('resize', () => {
+    if (el.prompter.hidden) return;
+    clearTimeout(rzTimer);
+    rzTimer = setTimeout(() => {
+      const r = maxPos() ? pos / maxPos() : 0;
+      measure(); setPos(r * maxPos()); updateTime();
+    }, 150);
+  });
 
-                       //初期バーラベル/状態                       
- setSpeed(設定.速度); 
- applyMirror(); 
-                        適用ガイド()                        
-}
+  // initial bar labels / states
+  setSpeed(settings.speed);
+  applyMirror();
+  applyGuide();
+})();

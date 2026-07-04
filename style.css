@@ -65,4 +65,4 @@ details p{margin:4px 0 12px;color:#cfcfd8}
 .time{min-width:52px}
 
 @media (max-width:560px){.bar-btn{padding:8px 10px}.val{min-width:38px}}
-@media(prefers-reduced-motion:reduce){.playbar.playbar.playbar遷移:なし.playbar遷移:なし.playbar遷移:なし.playbar遷移:なし.playbar.playbar遷移:なし.playbar遷移:なし.playbar遷移:なし.playbar遷移:なし}}
+@media (prefers-reduced-motion:reduce){.playbar{transition:none}}
