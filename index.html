@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>QuickPrompt — Free Online Teleprompter (No Sign-Up, Private)</title>
+<meta name="description" content=「ブラウザで100%動作する無料のオンラインテレプロンプター。 スクリプトを貼り付け、速度とフォントサイズを設定し、ミラーモードを使用します。 電話、タブレット、デスクトップで動作します。 あなたのテキストはあなたのデバイスから離れません。 スクリプトを貼り付け、速度とフォントサイズを設定し、ミラーモードを使用します。 電話、タブレット、デスクトップで動作します。 あなたのテキストはあなたのデバイスから離れません。 />
+<meta property="og:title" content="QuickPrompt — Free Online Teleprompter" />
+<meta property="og:description" content="スクリプトを貼り付けてプロンプトを起動します。" 100%ブラウザ内、プライベート、サインアップなし。 100%ブラウザ内、プライベート、サインアップなし。 />
+<meta property="og:type" content="website" />
+<!-- TODO: after connecting your own domain, uncomment and set it:
+<link rel="canonical" href="https://YOUR-DOMAIN.example/" /> -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23101014'/><path d='M22 16l26 16-26 16z' fill='%23ffd54a'/></svg>" />
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is my script uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. QuickPrompt runs entirely in your browser. Your script is stored only in this device's local storage and is never sent to any server."}},
+{"@type":"Question","name":"What is mirror mode?","acceptedAnswer":{"@type":"Answer","text":"Mirror mode flips the text horizontally so it reads correctly through the beam-splitter glass of a physical teleprompter rig."}},
+{"@type":"Question","name":"Does it work on iPad and iPhone?","acceptedAnswer":{"@type":"Answer","text":"Yes. QuickPrompt works in Safari and Chrome on iPad, iPhone and Android. On supported devices the screen stays awake while prompting."}},
+{"@type":"Question","name":"Can I control it with a keyboard or presenter remote?","acceptedAnswer":{"@type":"Answer","text":"Yes. Space plays and pauses, arrow keys change speed and position, and most Bluetooth presenter remotes work because they send Page Up and Page Down."}}
+]}
+</スクリプト>
+<ノスクリプト><p クラス="ノスクリプト">QuickPromptはスクリプトをスクロールするためにJavaScriptが必要です。 JavaScriptを有効にしてください。</p></noscript>
+</
+
+>
+  <ディヴ クラス="ブランド"><スパン クラス="ブランドマーク">▶</span> クイックプロンプト</div>
+  <ボタン id="startBtn" クラス="btn btn-プライマリー" disabled>プロンプト開始</button>
+ヘッダー
+
+>
+  <h1 クラス="タグライン">無料のオンラインテレプロンプター-サインアップなし、スクリプトはこのデバイスを離れることはありません</h1>
+  <ラベル クラス="srのみ" のために="スクリプト">あなたの台本</label>
+  <テキスト領域 id="スクリプト" スペルチェック="虚偽" placeholder="Paste or type your script here…"></textarea>
+  <p クラス="ヒント">ヒント: <kbd>Ctrl</kbd>+<kbd>エンター</kbd> 始めるのです プロンプト表示中:tap=pause/resume・ <kbd>宇宙</kbd> 遊び/一時停止・ <kbd>↑</kbd><kbd>↓</kbd> ・速度 <kbd>+</kbd><kbd>−</kbd> フォントサイズ・ <kbd>M</kbd> ミラー・ <kbd>G</kbd> ガイド・ <kbd>F</kbd> フルスクリーン・ <kbd>R</kbd> 再起動・ <kbd>エスク</kbd> 出口</p>
+
+  <セクション クラス="内容">
+    <h2>仕組み</h2>
+    <オル>
+      <リー>上のボックスにスクリプトを貼り付けます。</li>
+      <リー>プレス <強い>プロンプト開始</strong>.短いカウントダウン後、テキストは自動的にスクロールします。</li>
+      <リー>画面をタップして一時停止または再開します。 読みながら、下のバーから速度とフォントサイズを調整します。</li>
+    </オル>
+
+    <h2>特徴</h2>
+    <ul>
+      <リー><強い>設計上プライベート</強い> -すべてがブラウザで実行されます。 スクリプトはこのデバイスにのみ保存されます。</li>
+      <リー><強い>ミラーモード</強い> ビームスプリッターテレプロンプターリグ用です</li>
+      <リー><強い>スムーズスクロール</強い> ライブスピードとフォントサイズのコントロール、リーディングガイド、プログレスバーを備えています。</li>
+      <リー><強い>どこでも作品</強い> -電話、タブレット(iPadで素晴らしい)、デスクトップ。 プロンプト表示中は画面をスリープ状態に保ちます。</li>
+      <リー><強い>無料、口座なし</強い> -アップロードも透かしも時間制限もない</li>
+    </ul>
+
+    <h2>ファック</h2>
+    <詳細>
+      <要約>私のスクリプトはどこかにアップロードされていますか?</summary>
+      <p>いいえ。QuickPromptはテキストでネットワークリクエストを行いません。 スクリプトは、このデバイスのブラウザのローカルストレージにのみ保存されます。 ブラウザデータをクリアすると削除されるため、元のコピーは別の場所に保管してください。</p>
+    </詳細>
+    <詳細>
+      <要約>ミラーモードとは何ですか?</要約>
+      <p>テキストを水平に反転させる(⇋ボタン、または押す)。 <kbd>M</kbd>)なので、物理的なテレプロンプターリグのビームスプリッターガラスを通して正しく読み取ります。</p>
+    </詳細>
+    <詳細>
+      <要約>iPadとiPhoneで動作しますか?</summary>
+      <p>はい-iPad、iPhone、AndroidでSafariとChromeで実行されます。 サポートされているデバイスでは、プロンプト表示中は画面が自動的に停止します。</p>
+    </詳細>
+    <詳細>
+      <要約>キーボードやプレゼンターのリモコンを使ってもいいですか?</summary>
+      <p>はい。 <kbd>宇宙</kbd> 再生/一時停止と矢印キーが速度と位置を調整します。 ほとんどのBluetoothプレゼンターリモコンは、スクリプトを前後にジャンプするページアップ/ページダウンを送信します。</p>
+    </詳細>
+  </セクション>
+メイン
+
+>
+
+<!--=>=プロンプターオーバーレイ=-=-->
+<
+  <ディヴ id="進歩" クラス="進歩"></ディヴ>
+  <ディヴ id="ガイド" クラス="ガイド" アリアヒドゥン="true">▶</div>
+  <ディヴ id="ビューポート" クラス="ビューポート">
+    <ディヴ id="ムーバー" クラス="ムーバー">
+      <ディヴ id="テキストラップ" クラス="テキストラップ">
+        <ディヴ id="テキスト" クラス="テキスト"></div>
+      </ディヴ>
+    </ディヴ></ディヴ> 
+  </ディヴ></ディヴ> 
+  <ディヴ id="カウントダウン" クラス="カウントダウン" 隠し>3</div><ディヴ id="カウントダウン" クラス="カウントダウン" 隠し>3</div>
+  <ディヴ id="エンドキャップ" クラス="エンドキャップ" 隠し>- 台本の終わり -</div><ディヴ id="エンドキャップ" クラス="エンドキャップ" 隠し>- 台本の終わり -</div> 
+  <ディヴ id="プレイバー" クラス="プレイバー"><ディヴ id="プレイバー" クラス="プレイバー"> 
+    <ボタン id="exitBtn" クラス="btn bar-btn" アリアラベル="Back to editor">✕</button><ボタン id="exitBtn" クラス="btn bar-btn" アリアラベル="Back to editor">✕</button>
+    <ボタン id="restartBtn" クラス="btn bar-btn" アリアラベル="Restart from top">⟲</button><ボタン id="restartBtn" クラス="btn bar-btn" アリアラベル="Restart from top">⟲</button>
+    <ボタン id="playBtn" クラス="btn bar-btn play" aria-label="Play">▶</button><ボタン id="playBtn" クラス="btn bar-btn play" aria-label="Play">▶</button>
+    <スパン クラス="グループ" 役割="グループ" アリアラベル="Speed"><スパン クラス="グループ" 役割="グループ" アリアラベル="Speed"> 
+      <ボタン id="スピードダウン" クラス="btn bar-btn" aria-label="Slower">−</button><ボタン id="スピードダウン" クラス="btn bar-btn" aria-label="Slower">−</button>
+      <出力 id="スピードヴァル" クラス="ヴァル">3.0</出力><出力 id="スピードヴァル" クラス="ヴァル">3.0</出力>
+      <ボタン id="スピードアップ" クラス="btn bar-btn" アリアラベル="Faster">+</button><ボタン id="スピードアップ" クラス="btn bar-btn" アリアラベル="Faster">+</button>
+     </スパン> 
+    <スパン クラス="グループ" 役割="グループ" アリアラベル="Font size"><スパン クラス="グループ" 役割="グループ" アリアラベル="Font size"> 
+      <ボタン id="fontDown" クラス="btn bar-btn" アリアラベル="Smaller text">A−</button><ボタン id="fontDown" クラス="btn bar-btn" アリアラベル="Smaller text">A−</button>
+      <ボタン id="fontUp" クラス="btn bar-btn" アリアラベル="Larger text">A+</button><ボタン id="fontUp" クラス="btn bar-btn" アリアラベル="Larger text">A+</button>
+     </スパン> 
+    <ボタン id="mirrorBtn" クラス="btn bar-btn" アリアプレス="false" aria-label="Mirror mode">⇋</button><ボタン id="mirrorBtn" クラス="btn bar-btn" アリアプレス="false" aria-label="Mirror mode">⇋</button>
+    <ボタン id="guideBtn" クラス="btn bar-btn" アリアプレス="true" aria-label="Reading guide">▸</button><ボタン id="guideBtn" クラス="btn bar-btn" アリアプレス="true" aria-label="Reading guide">▸</button>
+    <ボタン id="fsBtn" クラス="btn bar-btn" アリアラベル="Fullscreen">⛶</button><ボタン id="fsBtn" クラス="btn bar-btn" アリアラベル="Fullscreen">⛶</button>
+    <出力 id="タイムレフト" クラス="バルタイム">0:00</output><出力 id="タイムレフト" クラス="バルタイム">0:00</output>
+ </div> </div> </div> 
+</div>
+
+<
+<!--Cloudflare Web Analytics:Cloudflareダッシュボードでビーコンのスニペットを有効にした後、ここに貼り付けます-->
+</body>body>
+    </html>
